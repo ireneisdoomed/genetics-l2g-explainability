@@ -8,7 +8,7 @@ st.write('This app allows you to explore the explainability of a L2G prediction 
 # Set constants
 DATA_VERSION = '2022-07-29'
 BUCKET_PATH = f'gs://otar001-core/l2g_explainability/{DATA_VERSION}'
-L2G_BUCKET = 'gs://genetics-portal-dev-staging/l2g/220712/models'
+L2G_BUCKET = f'gs://otar001-core/l2g_explainability/{DATA_VERSION}/models'
 
 with st.sidebar:
     with st.form(key='my_form'):
